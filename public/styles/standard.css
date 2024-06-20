@@ -1,0 +1,110 @@
+:root
+{
+    /*
+    Longueurs
+    */
+    --border-desktop: 17.5vw;
+    --border-laptop: 10vw;
+    --border-tablet: 7.5vw;
+    --border-mobile: 5vw;
+
+    /*
+    Hauteurs
+    */
+    --height-header: 7.5vh;
+    --height-footer: 20vh;
+
+    /*
+    Couleurs
+    */
+    --color-primary: #2D2D2D;
+    --color-secondary: #F9F9F9;
+    --color-white: #FFF;
+    --color-gray: #EEEEEE;
+    --color-onyx: #444444;
+    --color-blue: #0080FF;
+}
+
+body
+{
+    /*
+    Propriétés visuelles
+    */
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+span,
+a,
+button,
+input,
+textarea,
+ul,
+li,
+table,
+select
+{
+    font-family: 'Inter', sans-serif;
+    /*
+    Propriétés visuelles
+    */
+    margin: 0;
+    padding: 0;
+}
+
+a
+{
+    text-decoration: none;
+    /*
+    Propriétés visuelles
+    */
+    color: var(--color-primary);
+}
+
+ul
+{
+    list-style-type: none;
+}
+
+button
+{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    /*
+    Propriétés visuelles
+    */
+    font-size: 0.875rem;
+    font-weight: 700;
+    letter-spacing: 0.0375rem;
+    color: var(--color-secondary);
+    background-color: var(--color-primary);
+    border: 0.10rem solid var(--color-primary);
+    border-radius: 0.375rem;
+    padding: 0.50rem 0.875rem;
+    transition: color, background-color 0.25s ease;
+}
+
+button i
+{
+    /*
+    Propriétés visuelles
+    */
+    font-size: 1rem;
+    margin: 0 0.375rem 0 0;
+}
+
+button:hover
+{
+    /*
+    Propriétés visuelles
+    */
+    color: var(--color-primary);
+    background-color: var(--color-secondary);
+}

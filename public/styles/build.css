@@ -1,0 +1,148 @@
+header {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    position: fixed;
+    /*
+    Propriétés visuelles
+    */
+    width: calc(100% - (2 * var(--border-desktop)));
+    min-height: var(--height-header);
+    background-color: var(--color-white);
+    padding: 0 var(--border-desktop);
+}
+
+.shadow {
+    /*
+    Propriétés visuelles
+    */
+    box-shadow: none;
+    transition: box-shadow 0.25s ease;
+}
+
+.shadow.display {
+    /*
+    Propriétés visuelles
+    */
+    box-shadow: 0 0.25rem 0.25rem #2D2D2D25;
+}
+
+header i {
+    cursor: pointer;
+    /*
+    Propriétés visuelles
+    */
+    color: var(--color-primary);
+    font-size: 2rem;
+}
+
+#menu {
+    display: none;
+    position: fixed;
+    /*
+    Propriétés visuelles
+    */
+    width: 100%;
+    height: auto;
+    margin: var(--height-header) 0 0 0;
+    background-color: var(--color-white);
+    box-shadow: 0 0.25rem 0.25rem #2D2D2D25;
+}
+
+#menu a div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*
+    Propriétés visuelles
+    */
+    border-top: 0.10rem solid #E0E0E0;
+    padding: 1rem 0;
+}
+
+#menu a div i {
+    /*
+    Propriétés visuelles
+    */
+    color: var(--color-primary);
+    font-size: 2rem;
+}
+
+#menu a div span {
+    /*
+    Propriétés visuelles
+    */
+    font-weight: 400;
+}
+
+#menu a div span {
+    /*
+    Propriétés visuelles
+    */
+    color: var(--color-primary);
+    margin: 0.25rem 0 0 0;
+}
+
+@media screen and (max-width: 90rem) {
+    header {
+        width: calc(100% - (2 * var(--border-laptop)));
+        padding: 0 var(--border-laptop);
+    }
+}
+
+@media screen and (max-width: 64rem) {
+    header {
+        width: calc(100% - (2 * var(--border-tablet)));
+        padding: 0 var(--border-tablet);
+    }
+}
+
+@media screen and (max-width: 26.5rem) {
+    header {
+        width: calc(100% - (2 * var(--border-mobile)));
+        padding: 0 var(--border-mobile);
+    }
+}
+
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    /*
+    Propriétés visuelles
+    */
+    width: calc(100% - (2 * var(--border-desktop)));
+    background-color: var(--color-primary);
+    padding: 2rem var(--border-desktop);
+}
+
+footer p {
+    /*
+    Propriétés visuelles
+    */
+    color: var(--color-gray);
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 90rem) {
+    footer {
+        width: calc(100% - (2 * var(--border-laptop)));
+        padding: 2rem var(--border-laptop);
+    }
+}
+
+@media screen and (max-width: 64rem) {
+    footer {
+        width: calc(100% - (2 * var(--border-tablet)));
+        padding: 2rem var(--border-tablet);
+    }
+}
+
+@media screen and (max-width: 26.5rem) {
+    footer {
+        width: calc(100% - (2 * var(--border-mobile)));
+        padding: 2rem var(--border-mobile);
+    }
+}
